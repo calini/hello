@@ -1,0 +1,15 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/calini/Developer/git/github.com/calini/hello'
+go run go/main.go
+cc c/main.c -o /tmp/main_c
+/tmp/main_c
+c++ cpp/main.cpp -o /tmp/main_cpp
+/tmp/main_cpp
+javac -d /tmp/main_java java/Main.java
+java -cp /tmp/main_java Main
+python3 python/main.py
+rustc rust/main.rs -o /tmp/main_rs
+/tmp/main_rs
+ 
+make: Leaving directory `/Users/calini/Developer/git/github.com/calini/hello'
+ 
