@@ -6,6 +6,7 @@ JR = java
 PYC = python3
 RC = rustc
 SC = swift
+TPC = fpc
 
 all: go c cpp java python rust
 
@@ -19,6 +20,10 @@ c:
 cpp:
 	${CXX} cpp/main.cpp -o /tmp/main_cpp
 	/tmp/main_cpp
+
+pascal:
+	${TPC} turbo-pascal/main.pas -o/tmp/main_pas
+	/tmp/main_pas
 
 java:
 	${JC} -d /tmp/main_java java/Main.java
